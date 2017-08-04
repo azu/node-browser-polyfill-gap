@@ -45,7 +45,10 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |     module     |                   ---                    |                   ---                    |                                          |
 |      net       |                   ---                    |                   TODO                   |                                          |
 |       os       | [CoderPuppy/os-browserify](https://github.com/CoderPuppy/os-browserify) |                   TODO                   |                                          |
-|      path      | [substack/path-browserify](https://github.com/substack/path-browserify) |                   TODO                   |                                          |
+|      path      | [substack/path-browserify](https://github.com/substack/path-browserify) | [path.posix](https://nodejs.org/api/path.html#path_path_posix "path.posix") | [Issue](https://github.com/substack/path-browserify/issues/11 "Update to use newer node path code · Issue #11 · substack/path-browserify") |
+|                |                                          | [path.parse(path)](https://nodejs.org/docs/latest/api/path.html#path_path_parse_path "path.parse(path)") | [Issue](https://github.com/substack/path-browserify/issues/2) |
+|                |                                          | [path.win32](https://nodejs.org/api/path.html#path_path_posix "path.win32") |                                          |
+|                |                                          | [path.format(pathObject)](https://nodejs.org/api/path.html#path_path_posix "path.format(pathObject)") |                                          |
 |    process     | [shtylman/node-process](https://github.com/shtylman/node-process) |                   TODO                   |                                          |
 |    punycode    | [bestiejs/punycode.js](https://github.com/bestiejs/punycode.js) |                   TODO                   |                                          |
 |  querystring   | [mike-spainhower/querystring](https://github.com/mike-spainhower/querystring) |                   TODO                   |                                          |
