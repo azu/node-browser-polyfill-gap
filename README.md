@@ -35,7 +35,10 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |     dgram      |                   ---                    |                   ---                    |                                          |
 |      dns       |                   ---                    |                   TODO                   |                                          |
 |     domain     | [bevry/domain-browser](https://github.com/bevry/domain-browser) |                   ---                    |                                          |
-|     events     | [Gozala/events](https://github.com/Gozala/events) |                   ---                    |                                          |
+|     events     | [Gozala/events](https://github.com/Gozala/events) | [`eventNames`](https://nodejs.org/api/events.html#events_emitter_eventnames) | [Issue](https://github.com/Gozala/events/pull/32), [Document](https://nodejs.org/api/events.html#events_emitter_eventnames) |
+|                |                                          | [`getMaxListeners`](https://nodejs.org/api/events.html#events_emitter_getmaxlisteners) | [Document](https://nodejs.org/api/events.html#events_emitter_getmaxlisteners) |
+|                |                                          | [`prependListener`](https://nodejs.org/api/events.html#events_emitter_prependlistener_eventname_listener) | [Document](https://nodejs.org/api/events.html#events_emitter_prependlistener_eventname_listener) |
+|                |                                          | [`prependOnceListener`](https://nodejs.org/api/events.html#events_emitter_prependoncelistener_eventname_listener) | [Document](https://nodejs.org/api/events.html#events_emitter_prependoncelistener_eventname_listener) |
 |       fs       |                   ---                    |                   ---                    |                                          |
 |      http      | [jhiesey/stream-http](https://github.com/jhiesey/stream-http) |                   ---                    |                                          |
 |     https      | [substack/https-browserify](https://github.com/substack/https-browserify) |                   ---                    |                                          |
