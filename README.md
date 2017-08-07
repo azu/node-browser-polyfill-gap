@@ -18,9 +18,9 @@ Recently, Node.js have upgraded own core module like `assert`. But, shim module 
 
 This repository aim to collect the gap issue between Node.js and Browser shims.
 
-## Gap
+## Gap list
 
-
+​:memo:​ No support method/property or different behavior.
 
 |    Node.js     |               Browser shim               |                  Issue                   | Link                                     |
 | :------------: | :--------------------------------------: | :--------------------------------------: | ---------------------------------------- |
