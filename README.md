@@ -59,7 +59,7 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |    readline    |                   ---                    |                   ---                    |                                          |
 |      repl      |                   ---                    |                   ---                    |                                          |
 |     stream     | [substack/stream-browserify](https://github.com/substack/stream-browserify) |                   ---                    |                                          |
-| string_decoder | [rvagg/string_decoder](https://github.com/rvagg/string_decoder) |           Module is deprecated           | [Repository](https://github.com/nodejs/string_decoder) |
+| string_decoder | [rvagg/string_decoder](https://github.com/rvagg/string_decoder) |           TODO           | [Repository](https://github.com/nodejs/string_decoder) |
 |      sys       | [defunctzombie/node-util](https://github.com/defunctzombie/node-util) |                   TODO                   |                                          |
 |     timers     | [jryans/timers-browserify](https://github.com/jryans/timers-browserify) |                   ---                    |                                          |
 |      tls       |                   ---                    |                   ---                    |                                          |
