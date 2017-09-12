@@ -6,18 +6,17 @@ jobs:
   include:
     - stage: test
       env:
-        - TEST_TARGET="node"
+        - TARGET_1="node"
       script: npm run test:node
     - stage: test
       env:
-        - TEST_TARGET="webpack"
+        - TARGET_2="webpack"
       script: npm run test:webpack
     - stage: test
       env:
-        - TEST_TARGET="browserify"
+        - TARGET_3="browserify"
       script: npm run test:browserify
   fast_finish: true
   allow_failures:
     - env:
-      - TEST_TARGET="webpack"
-      - TEST_TARGET="browserify"
+      - TARGET_2="webpack" TARGET_3="browserify"
