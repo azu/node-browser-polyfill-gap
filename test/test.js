@@ -101,7 +101,17 @@ describe("gap-test", function() {
     });
   });
   describe("util", function() {
-    it("", function() {
+    it("inspect.defaultOptions", function() {
+      const util = require("util");
+      assert.ok(util.inspect.defaultOptions !== undefined, "should have util.inspect.defaultOptions");
+    });
+    it("callbackify()", function() {
+      const util = require("util");
+      assert.ok(typeof util.callbackify === "function", "should have util.callbackify()");
+    });
+    it("promisify()", function() {
+      const util = require("util");
+      assert.ok(typeof util.promisify === "function", "should have util.promisify()");
     });
   });
   describe("vm", function() {
