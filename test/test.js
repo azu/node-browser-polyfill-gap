@@ -57,13 +57,27 @@ describe("gap-test", function() {
     });
   });
   describe("os", function() {
-    it("os.constants", function() {
+    it("constants", function() {
       const os = require("os");
       assert.ok(os.constants !== undefined, "should have os.constants");
     });
   });
   describe("path", function() {
-    it("", function() {
+    it("posix", function() {
+      const path = require("path");
+      assert.ok(path.posix !== undefined, "should have path.posix");
+    });
+    it("win32", function() {
+      const path = require("path");
+      assert.ok(path.win32 !== undefined, "should have path.win32")
+    });
+    it("parse", function() {
+      const path = require("path");
+      assert.ok(typeof path.parse === "function", "should have path.parse");
+    });
+    it("format", function() {
+      const path = require("path");
+      assert.ok(typeof path.format === "function", "should have path.format");
     });
   });
   describe("process", function() {
