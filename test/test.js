@@ -29,7 +29,7 @@ describe("gap-test", function() {
     });
   });
   describe("events", function() {
-    it("eventName", function() {
+    it("eventNames", function() {
       const EventEmitter = require('events');
       const myEE = new EventEmitter();
       myEE.on('foo', () => {
@@ -57,7 +57,9 @@ describe("gap-test", function() {
     });
   });
   describe("os", function() {
-    it("", function() {
+    it("os.constants", function() {
+      const os = require("os");
+      assert.ok(os.constants !== undefined, "should have os.constants");
     });
   });
   describe("path", function() {
