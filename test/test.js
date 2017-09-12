@@ -7,7 +7,6 @@ describe("gap-test", function() {
       try {
         assert.ok(false)
       } catch (error) {
-        console.log(error);
         assert.ok(error.code !== undefined, "assertion error should have error.code");
       }
     });
