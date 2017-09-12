@@ -24,11 +24,11 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 
     npm run test:node 
 
-### webpack [![Build Status](https://travis-ci.org/azu/node-browser-shim-gap.svg?branch=master)](https://travis-ci.org/azu/node-browser-shim-gap)
+### webpack [CI Test Status](https://travis-ci.org/azu/node-browser-shim-gap)
 
     npm run test:webpack 
 
-### browserify [![Build Status](https://travis-ci.org/azu/node-browser-shim-gap.svg?branch=master)](https://travis-ci.org/azu/node-browser-shim-gap)
+### browserify [CI Test Status](https://travis-ci.org/azu/node-browser-shim-gap)
 
     npm run test:browserify
 
