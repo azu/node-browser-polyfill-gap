@@ -37,7 +37,23 @@ describe("gap-test", function() {
       myEE.on('bar', () => {
       });
       assert.ok(typeof myEE.eventNames === "function", "should have eventNames");
-      assert.deepStrictEqual(myEE.eventNames(), ['foo', 'bar'])
+      assert.deepStrictEqual(myEE.eventNames(), ['foo', 'bar']);
+    });
+    it("getMaxListeners()", function() {
+      const EventEmitter = require('events');
+      const myEE = new EventEmitter();
+      assert.ok(typeof myEE.getMaxListeners === "function", "should have getMaxListeners()");
+      assert.strictEqual(myEE.getMaxListeners(), 10);
+    });
+    it("prependListener()", function() {
+      const EventEmitter = require('events');
+      const myEE = new EventEmitter();
+      assert.ok(typeof myEE.prependListener === "function", "should have prependListener()");
+    });
+    it("prependOnceListener()", function() {
+      const EventEmitter = require('events');
+      const myEE = new EventEmitter();
+      assert.ok(typeof myEE.prependOnceListener === "function", "should have prependOnceListener()");
     });
   });
   describe("os", function() {
