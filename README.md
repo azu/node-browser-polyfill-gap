@@ -18,6 +18,20 @@ Recently, Node.js have upgraded own core module like `assert`. But, shim module 
 
 This repository aim to collect the gap issue between Node.js and Browser shims.
 
+## Test Suite
+
+### Node.js >= 8.1.0
+
+    npm run test:node 
+
+### webpack
+
+    npm run test:webpack 
+
+### browserify
+
+    npm run test:browserify
+
 ## Gap list
 
 :memo: No support method/property or different behavior.
@@ -72,6 +86,5 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |                |                                          | [util.promisify(original)](https://nodejs.org/api/util.html#util_util_promisify_original "util.promisify(original)") |                                          |
 |                |                                          | [util.promisify.custom](https://nodejs.org/api/util.html#util_util_promisify_custom "util.promisify.custom") |                                          |
 |                |                                          | [util.inspect() options maxArrayLength, breakLength](https://github.com/defunctzombie/node-util/issues/15 "util.inspect() options maxArrayLength, breakLength") |                                          |
-|       vm       | [substack/vm-browserify](https://github.com/substack/vm-browserify) | [vm.runInContext(code, contextifiedSandbox[, options])](https://nodejs.org/api/vm.html#vm_vm_runincontext_code_contextifiedsandbox_options "vm.runInContext(code, contextifiedSandbox[, options])") |                                          |
-|                |                                          | [vm.isContext(sandbox)](https://nodejs.org/api/vm.html#vm_vm_runincontext_code_contextifiedsandbox_options "vm.isContext(sandbox)") |                                          |
+|       vm       | [substack/vm-browserify](https://github.com/substack/vm-browserify) | [vm.isContext(sandbox)](https://nodejs.org/api/vm.html#vm_vm_runincontext_code_contextifiedsandbox_options "vm.isContext(sandbox)") |                                          |
 |      zlib      | [devongovett/browserify-zlib](https://github.com/devongovett/browserify-zlib) | [zlib.bytesRead](https://nodejs.org/api/zlib.html#zlib_zlib_bytesread "zlib.bytesRead#") |                                          |

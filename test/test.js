@@ -119,10 +119,6 @@ describe("gap-test", function() {
       const vm = require("vm");
       assert.ok(vm.isContext !== undefined, "should have vm.isContext");
     });
-    it("runInContext()", function() {
-      const vm = require("vm");
-      assert.ok(typeof vm.runInContext === "function", "should have vm.runInContext()");
-    });
   });
   describe("zlib", function() {
     it("bytesRead", function() {
