@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "node-browser-shim-gap",
+  "version": "1.0.0",
+  "description": " The gap issue between Node.js and Browser shims. ",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "build:browserify": "browserify test/test.js -o test/build/browserify-test.js",
+    "build:webpack": "webpack test/test.js test/build/webpack-test.js",
+    "test": "npm run test:node; npm run test:webpack; npm run test:browserify",
+    "test:node": "mocha test/test.js",
+    "test:browserify": "npm run build:browisery && mocha-chrome test/browserify-test.html",
+    "test:webpack": "npm run build:webpack && mocha-chrome test/webpack-test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azu/node-browser-shim-gap.git"
+  },
+  "keywords": [
+    "node",
+    "browser",
+    "shim",
+    "webpack",
+    "browserify"
+  ],
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/node-browser-shim-gap/issues"
+  },
+  "homepage": "https://github.com/azu/node-browser-shim-gap#readme",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "mocha": "^3.5.3",
+    "mocha-chrome": "^0.2.1",
+    "webpack": "^3.5.6"
+  }
+}
