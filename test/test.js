@@ -95,7 +95,9 @@ describe("gap-test", function() {
     });
   });
   describe("url", function() {
-    it("", function() {
+    it("URL", function() {
+      const url = require("url");
+      assert.ok(url.URL !== undefined, "should have url.URL");
     });
   });
   describe("util", function() {
