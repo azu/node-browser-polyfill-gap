@@ -20,11 +20,11 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 
 ## Gap list
 
-​:memo:​ No support method/property or different behavior.
+:memo: No support method/property or different behavior.
 
 |    Node.js     |               Browser shim               |                  Issue                   | Link                                     |
 | :------------: | :--------------------------------------: | :--------------------------------------: | ---------------------------------------- |
-|     assert     | [defunctzombie/commonjs-assert](https://github.com/defunctzombie/commonjs-assert) |       Error code and Error message are different      | [Issue](https://github.com/nodejs/node/issues/13937), [Article](https://medium.com/the-node-js-collection/node-js-errors-changes-you-need-to-know-about-dc8c82417f65) |
+|     assert     | [defunctzombie/commonjs-assert](https://github.com/defunctzombie/commonjs-assert) | Error code and Error message are different | [Issue](https://github.com/nodejs/node/issues/13937), [Article](https://medium.com/the-node-js-collection/node-js-errors-changes-you-need-to-know-about-dc8c82417f65) |
 |                |                                          | `assert.deepEqual` does't support `Map`, `Set`, `Iterator` etc... | [Issue](https://github.com/nodejs/node/issues/2309), [Document](https://nodejs.org/api/assert.html#assert_assert_deepequal_actual_expected_message), [Release](https://nodejs.org/en/blog/release/v8.0.0/) |
 |     buffer     | [feross/buffer](https://github.com/feross/buffer) |                   ---                    |                                          |
 | child_process  |                   ---                    |                   ---                    |                                          |
@@ -59,18 +59,19 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |    readline    |                   ---                    |                   ---                    |                                          |
 |      repl      |                   ---                    |                   ---                    |                                          |
 |     stream     | [substack/stream-browserify](https://github.com/substack/stream-browserify) |                   ---                    |                                          |
-| string_decoder | [rvagg/string_decoder](https://github.com/rvagg/string_decoder) |           TODO           | [Repository](https://github.com/nodejs/string_decoder) |
+| string_decoder | [rvagg/string_decoder](https://github.com/rvagg/string_decoder) |                   TODO                   | [Repository](https://github.com/nodejs/string_decoder) |
 |      sys       | [defunctzombie/node-util](https://github.com/defunctzombie/node-util) |                   TODO                   |                                          |
 |     timers     | [jryans/timers-browserify](https://github.com/jryans/timers-browserify) |                   ---                    |                                          |
 |      tls       |                   ---                    |                   ---                    |                                          |
 |      tty       | [substack/tty-browserify](https://github.com/substack/tty-browserify) |                   ---                    |                                          |
-|      url       | [defunctzombie/node-url](https://github.com/defunctzombie/node-url) |          Does't support WHATWG URL API         | [Release](https://nodejs.org/en/blog/release/v8.0.0/#say-hello-to-the-whatwg-url-parser), [Document](https://nodejs.org/api/url.html#url_the_whatwg_url_api), [Issue](https://github.com/defunctzombie/node-url/issues/33) |
-|                |                                          |     `url.format` does't support  WHATWG URL      | [Release](https://nodejs.org/en/blog/release/v7.6.0/), [Document](https://nodejs.org/api/url.html#url_url_format_url_options) |
+|      url       | [defunctzombie/node-url](https://github.com/defunctzombie/node-url) |          `url.URL`(WHATWG URL)           | [Release](https://nodejs.org/en/blog/release/v8.0.0/#say-hello-to-the-whatwg-url-parser), [Document](https://nodejs.org/api/url.html#url_the_whatwg_url_api), [Issue](https://github.com/defunctzombie/node-url/issues/33) |
+|                |                                          | `url.format` does't support  WHATWG URL  | [Release](https://nodejs.org/en/blog/release/v7.6.0/), [Document](https://nodejs.org/api/url.html#url_url_format_url_options) |
 |      util      | [defunctzombie/node-util](https://github.com/defunctzombie/node-util) | [util.callbackify(original)](https://nodejs.org/api/util.html#util_util_callbackify_original "util.callbackify(original)") |                                          |
 |                |                                          | [util.inspect.custom](https://nodejs.org/api/util.html#util_util_inspect_custom "util.inspect.custom") |                                          |
 |                |                                          | [util.inspect.defaultOptions](https://nodejs.org/api/util.html#util_util_inspect_defaultoptions "util.inspect.defaultOptions") |                                          |
 |                |                                          | [util.promisify(original)](https://nodejs.org/api/util.html#util_util_promisify_original "util.promisify(original)") |                                          |
 |                |                                          | [util.promisify.custom](https://nodejs.org/api/util.html#util_util_promisify_custom "util.promisify.custom") |                                          |
 |                |                                          | [util.inspect() options maxArrayLength, breakLength](https://github.com/defunctzombie/node-util/issues/15 "util.inspect() options maxArrayLength, breakLength") |                                          |
-|       vm       | [substack/vm-browserify](https://github.com/substack/vm-browserify) |                   TODO                   |                                          |
+|       vm       | [substack/vm-browserify](https://github.com/substack/vm-browserify) | [vm.runInContext(code, contextifiedSandbox[, options])](https://nodejs.org/api/vm.html#vm_vm_runincontext_code_contextifiedsandbox_options "vm.runInContext(code, contextifiedSandbox[, options])") |                                          |
+|                |                                          | [vm.isContext(sandbox)](https://nodejs.org/api/vm.html#vm_vm_runincontext_code_contextifiedsandbox_options "vm.isContext(sandbox)") |                                          |
 |      zlib      | [devongovett/browserify-zlib](https://github.com/devongovett/browserify-zlib) | [zlib.bytesRead](https://nodejs.org/api/zlib.html#zlib_zlib_bytesread "zlib.bytesRead#") |                                          |

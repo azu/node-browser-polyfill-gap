@@ -115,11 +115,19 @@ describe("gap-test", function() {
     });
   });
   describe("vm", function() {
-    it("", function() {
+    it("isContext", function() {
+      const vm = require("vm");
+      assert.ok(vm.isContext !== undefined, "should have vm.isContext");
+    });
+    it("runInContext()", function() {
+      const vm = require("vm");
+      assert.ok(typeof vm.runInContext === "function", "should have vm.runInContext()");
     });
   });
   describe("zlib", function() {
-    it("", function() {
+    it("bytesRead", function() {
+      const zlib = require("zlib");
+      assert.ok(zlib.bytesRead !== undefined, "should have zlib.bytesRead");
     });
   });
 });
