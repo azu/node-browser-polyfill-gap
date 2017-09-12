@@ -122,7 +122,9 @@ describe("gap-test", function() {
   describe("zlib", function() {
     it("bytesRead", function() {
       const zlib = require("zlib");
-      assert.ok(zlib.bytesRead !== undefined, "should have zlib.bytesRead");
+      const input = new Buffer('lorem ipsum dolor sit amet');
+      const compressed = zlib.deflate(input);
+      assert.ok(compressed.bytesRead !== undefined, "should have zlib.bytesRead");
     });
   });
 });
