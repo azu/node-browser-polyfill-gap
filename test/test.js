@@ -81,7 +81,17 @@ describe("gap-test", function() {
     });
   });
   describe("process", function() {
-    it("", function() {
+    it("platform", function() {
+      assert.ok(process.platform !== undefined, "should have process.platform");
+    });
+    it("execArgv", function() {
+      assert.ok(process.execArgv !== undefined, "should have process.execArgv");
+    });
+    it("cpuUsage()", function() {
+      assert.ok(typeof process.cpuUsage === "function", "should have process.cpuUsage()");
+    });
+    it("emitWarning()", function() {
+      assert.ok(typeof process.emitWarning === "function", "should have process.emitWarning()");
     });
   });
   describe("url", function() {
