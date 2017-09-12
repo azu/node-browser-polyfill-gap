@@ -11,19 +11,18 @@ describe("gap-test", function() {
       }
     });
     it("assert.deepEqual", function() {
-      assert.deepEqual(new Set([1, 2, 3]), new Set(["1", "2", "3"]), "assert.deepEqual should support Set");
-      assert.deepEqual(new Set([[1, 2], [3, 4]]), new Set([
-        ["3", "4"], ["1", "2"]
-      ]), "assert.deepEqual should support Map");
+      // Node <= 6 always pass..
+      assert.notDeepEqual(new Set([1, 2, 3]), new Set([4, 5, 6]), "assert.deepEqual should support Set");
+      assert.notDeepEqual(new Set([[1, 2], [3, 4]]), new Set([["a", "b"], ["c", "d"]]), "assert.deepEqual should support Map");
     });
     it("assert.deepStrictEqual", function() {
-      assert.deepStrictEqual(
+      assert.notDeepStrictEqual(
         new Set([1, 2, 3]),
-        new Set([1, 2, 3]),
+        new Set(["1", "2", "3"]),
         "assert.deepStrictEqual should support Set");
-      assert.deepStrictEqual(
+      assert.notDeepStrictEqual(
         new Set([[1, 2], [3, 4]]),
-        new Set([[1, 2], [3, 4]]),
+        new Set([["1", "2"], ["3", "4"]]),
         "assert.deepStrictEqual should support Map");
     });
   });
