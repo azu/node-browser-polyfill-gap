@@ -1,3 +1,23 @@
 sudo: false
 language: node_js
 node_js: 8
+cache: yarn
+jobs:
+  include:
+    - stage: test
+      env:
+        - TEST_TARGET="node"
+      script: npm run test:node
+    - stage: test
+      env:
+        - TEST_TARGET="webpack"
+      script: npm run test:webpack
+    - stage: test
+      env:
+        - TEST_TARGET="browserify"
+      script: npm run test:browserify
+  fast_finish: true
+  allow_failures:
+    - env:
+      - TEST_TARGET="webpack"
+      - TEST_TARGET="browserify"
