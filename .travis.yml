@@ -8,11 +8,11 @@ jobs:
       env:
         - TARGET_1="node"
       script: npm run test:node
-    - stage: test
+    - stage: test-shim
       env:
         - TARGET_2="webpack"
       script: npm run test:webpack
-    - stage: test
+    - stage: test-shim
       env:
         - TARGET_3="browserify"
       script: npm run test:browserify
