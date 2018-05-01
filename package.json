@@ -9,7 +9,7 @@
   },
   "scripts": {
     "clean": "rimraf test/build && mkdirp test/build",
-    "build:browserify": "npm run clean && browserify test/test.js -o test/build/browserify-test.js",
+    "build:browserify": "npm run clean && browserify test/test.js -o test/build/browserify-test.js --mode development",
     "build:webpack": "npm run clean && webpack test/test.js -o test/build/webpack-test.js",
     "test": "npm run test:node; npm run test:webpack; npm run test:browserify",
     "test:node": "mocha test/test.js",
