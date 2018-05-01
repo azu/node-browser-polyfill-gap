@@ -10,13 +10,12 @@ jobs:
       script: npm run test:node
     - stage: test-shim
       env:
-        - TARGET="webpack" SHIM=1
+        - TARGET="webpack"
       script: npm run test:webpack
     - stage: test-shim
       env:
-        - TARGET="browserify" SHIM=1
+        - TARGET="browserify"
       script: npm run test:browserify
   fast_finish: true
   allow_failures:
-    - env:
-      - SHIM=1
+    - stage: test-shim
