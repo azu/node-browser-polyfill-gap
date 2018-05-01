@@ -20,7 +20,7 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 
 ## Test Suite
 
-### Node.js >= 8.1.0 [![Build Status](https://travis-ci.org/azu/node-browser-shim-gap.svg?branch=master)](https://travis-ci.org/azu/node-browser-shim-gap)
+### Node.js >= 10.0.0 [![Build Status](https://travis-ci.org/azu/node-browser-shim-gap.svg?branch=master)](https://travis-ci.org/azu/node-browser-shim-gap)
 
     npm run test:node 
 
@@ -54,6 +54,7 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |                |                                          | [`getMaxListeners`](https://nodejs.org/api/events.html#events_emitter_getmaxlisteners) | [Issue](https://github.com/Gozala/events/pull/32) |
 |                |                                          | [`prependListener`](https://nodejs.org/api/events.html#events_emitter_prependlistener_eventname_listener) | [Issue](https://github.com/Gozala/events/pull/32) |
 |                |                                          | [`prependOnceListener`](https://nodejs.org/api/events.html#events_emitter_prependoncelistener_eventname_listener) | [Issue](https://github.com/Gozala/events/pull/32) |
+|                |                                          | `off` | [Issue]https://github.com/nodejs/node/pull/17156) |
 |       fs       |                   ---                    |                   ---                    |                                          |
 |      http      | [jhiesey/stream-http](https://github.com/jhiesey/stream-http) |                   ---                    |                                          |
 |     https      | [substack/https-browserify](https://github.com/substack/https-browserify) |                   ---                    |                                          |
