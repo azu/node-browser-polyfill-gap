@@ -34,8 +34,6 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 
 ## Gap list
 
-:memo: No support method/property or different behavior.
-
 |    Node.js     |               Browser shim               |                  Issue                   | Link                                     |
 | :------------: | :--------------------------------------: | :--------------------------------------: | ---------------------------------------- |
 |     assert     | [defunctzombie/commonjs-assert](https://github.com/defunctzombie/commonjs-assert) | Error code and Error message are different | [Issue](https://github.com/nodejs/node/issues/13937), [Article](https://medium.com/the-node-js-collection/node-js-errors-changes-you-need-to-know-about-dc8c82417f65) |
