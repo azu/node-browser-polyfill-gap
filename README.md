@@ -53,7 +53,7 @@ This repository aim to collect the gap issue between Node.js and Browser shims.
 |                |                                          | [`prependListener`](https://nodejs.org/api/events.html#events_emitter_prependlistener_eventname_listener) | [Issue](https://github.com/Gozala/events/pull/32) |
 |                |                                          | [`prependOnceListener`](https://nodejs.org/api/events.html#events_emitter_prependoncelistener_eventname_listener) | [Issue](https://github.com/Gozala/events/pull/32) |
 |                |                                          | `off` | [Issue](https://github.com/nodejs/node/pull/17156) |
-|       fs       |                   [fs/promises](https://nodejs.org/api/fs.html#fs_fs_promises_api)                    |    [PR](https://github.com/nodejs/node/pull/18297)              ---                    |                                          |
+|       fs       |                   ---                    |                   ---                    |                                          |
 |      http      | [jhiesey/stream-http](https://github.com/jhiesey/stream-http) |                   ---                    |                                          |
 |     https      | [substack/https-browserify](https://github.com/substack/https-browserify) |                   ---                    |                                          |
 |     module     |                   ---                    |                   ---                    |                                          |
