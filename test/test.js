@@ -17,15 +17,15 @@ describe("gap-test", function() {
                 ["a", "b"], ["c", "d"]
             ]), "assert.deepEqual should support Map");
         });
-        it("assert.deepStrictEqual", function() {
-            assert.notDeepStrictEqual(
-                new Set([1, 2, 3]),
-                new Set(["1", "2", "3"]),
-                "assert.deepStrictEqual should support Set");
-            assert.notDeepStrictEqual(
-                new Set([[1, 2], [3, 4]]),
-                new Set([["1", "2"], ["3", "4"]]),
-                "assert.deepStrictEqual should support Map");
+
+        it("assert.strict", function() {
+            assert.ok(assert.strict, "should have assert.strict");
+        });
+        it("assert.rejects", function() {
+            assert.ok(typeof assert.rejects === "function", "should have assert.rejects");
+        });
+        it("assert.doesNotReject", function() {
+            assert.ok(typeof assert.doesNotReject === "function", "should have assert.doesNotReject");
         });
     });
     describe("events", function() {
