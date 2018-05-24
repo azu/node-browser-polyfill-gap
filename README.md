@@ -11,6 +11,10 @@ For example, webpack and browserify alias `assert` module to [commonjs-assert](h
 - browserify:
   - [substack/browserify-handbook: how to build modular applications with browserify](https://github.com/substack/browserify-handbook#builtins)
   - [node-browserify/builtins.js at master · substack/node-browserify](https://github.com/substack/node-browserify/blob/master/lib/builtins.js)
+  
+## Issues
+
+- webpack: [Incompatibility between Node.js core libs and webpack's lib · Issue #78 · webpack/node-libs-browser](https://github.com/webpack/node-libs-browser/issues/78 "Incompatibility between Node.js core libs and webpack&#39;s lib · Issue #78 · webpack/node-libs-browser")
 
 ## Purpose
 
