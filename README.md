@@ -1,10 +1,10 @@
-# Node.js and Browser shim gap
+# Node.js and Browser polyfill gap
 
-[webpack](https://github.com/webpack/webpack "webpack") and [browserify](https://github.com/substack/node-browserify "browserify") user shim libraries for in-browser usage.
+[webpack](https://github.com/webpack/webpack "webpack") and [browserify](https://github.com/substack/node-browserify "browserify") user polyfill libraries for in-browser usage.
 
 For example, webpack and browserify alias `assert` module to [commonjs-assert](https://github.com/defunctzombie/commonjs-assert "commonjs-assert") in browser-env.
 
-## Shim library
+## polyfill library
 
 - webpack:
   - [webpack/node-libs-browser: The node core libs for in browser usage.](https://github.com/webpack/node-libs-browser "webpack/node-libs-browser: The node core libs for in browser usage.")
@@ -18,27 +18,27 @@ For example, webpack and browserify alias `assert` module to [commonjs-assert](h
 
 ## Purpose
 
-Recently, Node.js have upgraded own core module like `assert`. But, shim module like [commonjs-assert](https://github.com/defunctzombie/commonjs-assert "commonjs-assert") does not follow the breaking change.
+Recently, Node.js have upgraded own core module like `assert`. But, polyfill module like [commonjs-assert](https://github.com/defunctzombie/commonjs-assert "commonjs-assert") does not follow the breaking change.
 
-This repository aim to collect the gap issue between Node.js and Browser shims.
+This repository aim to collect the gap issue between Node.js and Browser polyfills.
 
 ## Test Suite
 
-### Node.js >= 10.0.0 [![Build Status](https://travis-ci.org/azu/node-browser-shim-gap.svg?branch=master)](https://travis-ci.org/azu/node-browser-shim-gap)
+### Node.js >= 10.0.0 [![Build Status](https://travis-ci.org/azu/node-browser-polyfill-gap.svg?branch=master)](https://travis-ci.org/azu/node-browser-polyfill-gap)
 
     npm run test:node 
 
-### webpack [CI Test Status](https://travis-ci.org/azu/node-browser-shim-gap)
+### webpack [CI Test Status](https://travis-ci.org/azu/node-browser-polyfill-gap)
 
     npm run test:webpack 
 
-### browserify [CI Test Status](https://travis-ci.org/azu/node-browser-shim-gap)
+### browserify [CI Test Status](https://travis-ci.org/azu/node-browser-polyfill-gap)
 
     npm run test:browserify
 
 ## Gap list
 
-|    Node.js     |               Browser shim               |                  Issue                   | Link                                     |
+|    Node.js     |               Browser polyfill               |                  Issue                   | Link                                     |
 | :------------: | :--------------------------------------: | :--------------------------------------: | ---------------------------------------- |
 |     assert     | [defunctzombie/commonjs-assert](https://github.com/defunctzombie/commonjs-assert) | Error code and Error message are different | [Issue](https://github.com/nodejs/node/issues/13937), [Article](https://medium.com/the-node-js-collection/node-js-errors-changes-you-need-to-know-about-dc8c82417f65) |
 |                |                                          | `assert.deepEqual` does't support `Map`, `Set`, `Iterator` etc... | [Issue](https://github.com/nodejs/node/issues/2309), [Document](https://nodejs.org/api/assert.html#assert_assert_deepequal_actual_expected_message), [Release](https://nodejs.org/en/blog/release/v8.0.0/) |
